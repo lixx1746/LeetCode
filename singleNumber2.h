@@ -1,8 +1,7 @@
 class Solution {
 public:
     int singleNumber(int A[], int n) {
-        int ans = 0, count = 0;
-        int bit = 1;
+        int ans = 0, count = 0, bit = 1;
         for(int i = 0; i < 32; i++) {
             for(int j = 0; j < n; j++) {
                 if(A[j] & bit) count++;
