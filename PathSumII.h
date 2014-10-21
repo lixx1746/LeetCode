@@ -13,7 +13,6 @@ class Solution {
 public:
     vector<vector<int> > pathSum(TreeNode *root, int sum) {
          vector<vector<int> > res;
-         if(!root) return res;
          vector<int> path;
          helper(root, sum, res, path);
          return res;
